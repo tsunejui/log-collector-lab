@@ -47,7 +47,7 @@ services:
     ports:
       - "9095:9095"
     volumes:
-      - ./kafka-data:/bitnami/kafka
+      - ./data/kafka-data:/bitnami/kafka
     environment:
       # KRaft settings
       - KAFKA_ENABLE_KRAFT=yes
