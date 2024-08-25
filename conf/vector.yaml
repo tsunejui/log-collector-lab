@@ -1,0 +1,13 @@
+sources:
+  app_logs:
+    type: "file"
+    include:
+      - "/var/log/*.log"
+
+sinks:
+  print:
+    type: "console"
+    inputs:
+      - "app_logs"
+    encoding:
+      codec: "json"

@@ -1,0 +1,4 @@
+CONSUMER consumer-group-id
+topic: access-logs
+partitions: 0
+from: 0
